@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonance</title>
+<meta name="description" content="Sonance is a story-driven RPG about consciousness, what it costs to keep one, and what is left of a person when it fails. In development.">
+<meta property="og:title" content="Sonance">
+<meta property="og:description" content="A story-driven RPG about consciousness, what it costs to keep one, and what is left of a person when it fails.">
+<meta property="og:image" content="assets/Sonance_Logo.png">
+<link rel="icon" href="assets/icon.png">
+<link rel="preload" as="image" href="assets/mainmenu_bg.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lotus-reflection"></div>
+<div class="lotus"></div>
+
+
+<div id="intro">
+  <div class="dbox">
+    <p class="dname" id="dname"></p>
+    <p class="dtext" id="dtext"></p>
+    <ul class="choices" id="choices"></ul>
+    <img class="darrow" id="darrow" src="assets/dialoguearrow.png" alt="">
+  </div>
+  <button class="skip" type="button">skip</button>
+</div>
+
+<div id="page">
+
+  <header class="hero">
+    <p class="hidden-note" style="right: 5%; top: 18%">The gap is four days wide</p>
+    <p class="hidden-note" style="left: 8%; top: 52%">Day 6: still conscious. Probably</p>
+    <p class="hidden-note" style="left: 14%; bottom: 12%">Ask again tomorrow</p>
+    <p class="hidden-note" style="right: 34%; top: 62%">Have you tried turning it off and on again?</p>
+    <div class="torch"></div>
+    <div class="logo-wrap">
+      <canvas id="logo-particles"></canvas>
+      <img src="assets/Sonance_Logo.png" alt="Sonance">
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="about">
+      <h2>The game</h2>
+      <p>Sonance is a story-driven RPG about <span class="rot" data-rot="something that was never yours">consciousness</span>, and about how little it takes to <span class="rot" data-rot="misplace">lose</span> one. It treats <span class="rot" data-rot="the part that watches">awareness</span> as something <span class="rot" data-rot="rented">maintained</span> rather than something owned, and asks what is <span class="rot" data-rot="still moving">left</span> of a <span class="rot" data-rot="shape wearing a name">person</span> once that maintenance <span class="rot" data-rot="was never started">stops</span>.</p>
+      <p>In <span class="rot" data-rot="decay">development</span>. No release date yet.</p>
+    </section>
+
+    <section>
+      <h2>Latest posts</h2>
+      <ul class="posts">
+        <li>
+          <a href="posts/first-devlog.html">
+            <span>Devlog #1: What Sonance is</span>
+            <time datetime="2026-08-03">03.08.2026</time>
+          </a>
+        </li>
+      </ul>
+      <a class="more" href="blog.html">All posts</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">Sonance, made by a very small team.</div>
+  </footer>
+
+</div>
+
+<script src="site.js"></script>
+<script src="intro.js"></script>
+</body>
+</html>
